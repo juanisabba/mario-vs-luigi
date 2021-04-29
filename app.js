@@ -12,6 +12,7 @@ function juego() {
   const luigiWin = document.getElementById("luigi-win");
   const marioPlayAgain = document.querySelector(".mario-play-again");
   const luigiPlayAgain = document.querySelector(".luigi-play-again");
+  const warningButton = document.querySelector('.warning-sign button')
 
   let time = 20;
   let movement = 7;
@@ -21,6 +22,10 @@ function juego() {
   let controlGame;
   let player1;
   let player2;
+  
+  warningButton.onclick = function () {
+    document.querySelector('.warning-sign').style.display = "none"
+  }
 
   startButton.onclick = function () {
     document.getElementById("principal-menu").style.display = "none";
@@ -145,7 +150,7 @@ function juego() {
       else if (player1Score === 8) resultLeft.setAttribute('src', 'img/8.png')
       else if (player1Score === 9) resultLeft.setAttribute('src', 'img/9.png')
           
-      if (player1Score === 5) player1Win();
+      if (player1Score === 10) player1Win();
       else point();
 
       //PLAYER 2
@@ -162,7 +167,7 @@ function juego() {
       else if (player2Score === 8) resultRight.setAttribute('src', 'img/8.png')
       else if (player2Score === 9) resultRight.setAttribute('src', 'img/9.png')
 
-      if (player2Score === 5) player2Win();
+      if (player2Score === 10) player2Win();
       else point();
     }
   }
