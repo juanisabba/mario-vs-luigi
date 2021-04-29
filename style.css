@@ -213,5 +213,6 @@ html {
     font-size: 20px;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
   }
 }
