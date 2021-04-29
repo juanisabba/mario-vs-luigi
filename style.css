@@ -190,3 +190,28 @@ html {
     background-size: contain;  
     z-index: -1 ;
 }
+
+@media screen and (max-width: 768px) {
+  .warning-sign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 100;
+    text-align: center;
+    backdrop-filter: blur(10px);
+  }
+
+  .warning-sign button {
+    padding: 10px;
+    background-color: steelblue;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+  }
+}
