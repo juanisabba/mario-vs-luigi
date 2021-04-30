@@ -191,6 +191,9 @@ html {
     z-index: -1 ;
 }
 
+.warning-sign{
+  dispay: none;
+
 @media screen and (max-width: 768px) {
   .warning-sign {
     display: flex;
